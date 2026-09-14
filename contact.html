@@ -15,41 +15,8 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-<script>
-emailjs.init({
-    publicKey: "MjniVxM5ti6CLkizJ"
-});
 
-const quoteForm = document.getElementById("quoteForm");
-
-quoteForm.addEventListener("submit", function(event) {
-
-    event.preventDefault();
-
-    emailjs.sendForm(
-        "service_hcx2ib7",
-        "template_z098a1s",
-        this
-    )
-    .then(function() {
-
-        alert("견적문의가 정상적으로 접수되었습니다.");
-
-        quoteForm.reset();
-
-    })
-    .catch(function(error) {
-
-        console.error("EmailJS 오류:", error);
-
-        alert("문의 전송에 실패했습니다. 잠시 후 다시 시도해주세요.");
-
-    });
-
-});
-</script>
 <body>
 
 
@@ -108,10 +75,10 @@ quoteForm.addEventListener("submit", function(event) {
 
 
 
+        <!-- 견적문의 폼 -->
+
         <form
-            action="send.php"
-            method="POST"
-            enctype="multipart/form-data"
+            id="quoteForm"
             class="inquiry-form"
         >
 
@@ -319,6 +286,8 @@ quoteForm.addEventListener("submit", function(event) {
 
                     <input
                         type="checkbox"
+                        name="privacy_agree"
+                        value="동의"
                         required
                     >
 
@@ -338,19 +307,25 @@ quoteForm.addEventListener("submit", function(event) {
             >
                 문의 보내기
             </button>
-<!-- 홈페이지로 돌아가기 -->
 
-<div class="bracket-home">
 
-    <a href="index.html">
-        ← 홈페이지로 돌아가기
-    </a>
+        </form>
 
-</div>
+
+        <!-- 홈페이지로 돌아가기 -->
+
+        <div class="bracket-home">
+
+            <a href="index.html">
+                ← 홈페이지로 돌아가기
+            </a>
+
+        </div>
+
+
+    </div>
 
 </section>
-
-
 
 
 
@@ -384,6 +359,121 @@ quoteForm.addEventListener("submit", function(event) {
     </p>
 
 </footer>
+
+
+
+<!-- ========================================= -->
+<!-- EmailJS -->
+<!-- ========================================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    // EmailJS 초기화
+    emailjs.init({
+        publicKey: "MjniVxM5ti6CLkizJ"
+    });
+
+
+    // 문의 폼 찾기
+    const quoteForm = document.getElementById("quoteForm");
+
+
+    // 폼이 없으면 종료
+    if (!quoteForm) {
+
+        console.error("quoteForm을 찾을 수 없습니다.");
+
+        return;
+
+    }
+
+
+    // 문의 보내기
+    quoteForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+
+        // 버튼
+        const submitButton =
+            quoteForm.querySelector(".inquiry-submit");
+
+
+        // 전송 중 표시
+        if (submitButton) {
+
+            submitButton.disabled = true;
+
+            submitButton.textContent = "전송 중...";
+
+        }
+
+
+        // EmailJS 전송
+        emailjs.sendForm(
+            "service_hcx2ib7",
+            "template_z098a1s",
+            quoteForm
+        )
+
+        .then(function (response) {
+
+            console.log(
+                "EmailJS 전송 성공:",
+                response
+            );
+
+
+            alert(
+                "견적문의가 정상적으로 접수되었습니다."
+            );
+
+
+            // 입력 내용 초기화
+            quoteForm.reset();
+
+        })
+
+
+        .catch(function (error) {
+
+            console.error(
+                "EmailJS 전송 오류:",
+                error
+            );
+
+
+            alert(
+                "문의 전송에 실패했습니다.\n\n" +
+                "오류 내용을 확인해주세요."
+            );
+
+        })
+
+
+        .finally(function () {
+
+            // 버튼 원상복구
+            if (submitButton) {
+
+                submitButton.disabled = false;
+
+                submitButton.textContent = "문의 보내기";
+
+            }
+
+        });
+
+    });
+
+});
+
+</script>
 
 
 </body>
