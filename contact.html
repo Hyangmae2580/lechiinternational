@@ -15,7 +15,37 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
+<script>
+  emailjs.init({
+    publicKey: "MjniVxM5ti6CLkizJ"
+  });
+
+  // 견적문의 폼
+  const quoteForm = document.querySelector("#quoteForm");
+
+  if (quoteForm) {
+    quoteForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      emailjs.sendForm(
+        "service_hcx2ib7",
+        "template_z098a1s",
+        this
+      )
+      .then(function () {
+        alert("견적문의가 정상적으로 접수되었습니다.");
+        quoteForm.reset();
+      })
+      .catch(function (error) {
+        console.error("EmailJS 오류:", error);
+        alert("문의 전송에 실패했습니다. 잠시 후 다시 시도해주세요.");
+      });
+    });
+  }
+</script>
 
 <body>
 
