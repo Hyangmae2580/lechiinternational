@@ -1591,3 +1591,20 @@ footer {
     background: #123f70;
     color: #fff;
 }
+
+.blog-button {
+    display: inline-block;
+    margin-left: 12px;
+    padding: 12px 22px;
+    background: #0f2747;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.blog-button:hover {
+    opacity: 0.85;
+}
