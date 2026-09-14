@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>견적 및 제품 문의 | 레치인터내셔널</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+    <div class="logo">
+
+        <a href="index.html">
+
+            <img
+                src="images/logo.png"
+                alt="레치인터내셔널 로고"
+            >
+
+        </a>
+
+    </div>
+
+
+    <nav class="menu">
+
+        <a href="index.html">홈</a>
+
+        <a href="index.html#about">회사소개</a>
+
+        <a href="index.html#products">제품소개</a>
+
+        <a href="index.html#custom">주문제작</a>
+
+        <a href="index.html#factory">중국 생산공장</a>
+
+    </nav>
+
+</header>
+
+
+
+<section class="inquiry-section">
+
+
+    <div class="inquiry-container">
+
+
+        <div class="inquiry-title">
+
+            <span>INQUIRY</span>
+
+            <h1>견적 및 제품 문의</h1>
+
+            <p>
+                제품 및 견적에 관한 문의사항을 남겨주시면
+                확인 후 연락드리겠습니다.
+            </p>
+
+        </div>
+
+
+
+        <form
+            action="send.php"
+            method="POST"
+            enctype="multipart/form-data"
+            class="inquiry-form"
+        >
+
+
+            <!-- 문의 유형 -->
+
+            <div class="form-group">
+
+                <label>
+                    문의 유형 <em>*</em>
+                </label>
+
+                <select
+                    name="inquiry_type"
+                    required
+                >
+
+                    <option value="">
+                        문의 유형을 선택해주세요
+                    </option>
+
+                    <option value="제품 견적">
+                        제품 견적
+                    </option>
+
+                    <option value="제품 문의">
+                        제품 문의
+                    </option>
+
+                    <option value="주문제작">
+                        주문제작
+                    </option>
+
+                    <option value="납품 문의">
+                        납품 문의
+                    </option>
+
+                    <option value="기타">
+                        기타
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- 제품명 -->
+
+            <div class="form-group">
+
+                <label>
+                    제품명 <em>*</em>
+                </label>
+
+                <input
+                    type="text"
+                    name="product"
+                    placeholder="문의하실 제품명을 입력해주세요."
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- 문의 내용 -->
+
+            <div class="form-group">
+
+                <label>
+                    문의내용 <em>*</em>
+                </label>
+
+                <textarea
+                    name="message"
+                    rows="7"
+                    placeholder="필요한 제품의 규격, 수량, 납기일 등 문의사항을 입력해주세요."
+                    required
+                ></textarea>
+
+            </div>
+
+
+
+            <!-- 성명 -->
+
+            <div class="form-group">
+
+                <label>
+                    문의자 성명 <em>*</em>
+                </label>
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="성명을 입력해주세요."
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- 회사명 -->
+
+            <div class="form-group">
+
+                <label>
+                    회사명
+                </label>
+
+                <input
+                    type="text"
+                    name="company"
+                    placeholder="회사명을 입력해주세요."
+                >
+
+            </div>
+
+
+
+            <!-- 연락처 -->
+
+            <div class="form-group">
+
+                <label>
+                    문의자 연락처 <em>*</em>
+                </label>
+
+                <input
+                    type="tel"
+                    name="phone"
+                    placeholder="010-0000-0000"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- 이메일 -->
+
+            <div class="form-group">
+
+                <label>
+                    이메일 <em>*</em>
+                </label>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="example@email.com"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- 사업자번호 -->
+
+            <div class="form-group">
+
+                <label>
+                    사업자등록번호
+                </label>
+
+                <input
+                    type="text"
+                    name="business_number"
+                    placeholder="000-00-00000"
+                >
+
+            </div>
+
+
+
+            <!-- 첨부파일 -->
+
+            <div class="form-group">
+
+                <label>
+                    첨부파일
+                </label>
+
+                <input
+                    type="file"
+                    name="attachment"
+                >
+
+                <small>
+                    제품 사진, 도면, 견적 요청서 등을 첨부할 수 있습니다.
+                </small>
+
+            </div>
+
+
+
+            <!-- 개인정보 -->
+
+            <div class="privacy-box">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        required
+                    >
+
+                    개인정보 수집 및 이용에 동의합니다.
+
+                </label>
+
+            </div>
+
+
+
+            <!-- 전송 -->
+
+            <button
+                type="submit"
+                class="inquiry-submit"
+            >
+                문의 보내기
+            </button>
+<!-- 홈페이지로 돌아가기 -->
+
+<div class="bracket-home">
+
+    <a href="index.html">
+        ← 홈페이지로 돌아가기
+    </a>
+
+</div>
+
+</section>
+
+
+
+
+
+<footer>
+
+    <div class="footer-company">
+
+        <strong>레치인터내셔널(주)</strong>
+
+        <p>
+            대표자 : 리츠언 (LI CHEN)
+        </p>
+
+        <p>
+            사업자등록번호 : 268-86-02952
+        </p>
+
+        <p>
+            TEL : 010-4340-0104
+        </p>
+
+        <p>
+            E-mail : hyangmae2580@naver.com
+        </p>
+
+    </div>
+
+
+    <p class="copyright">
+        © 2026 LECHI INTERNATIONAL. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
