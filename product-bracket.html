@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>브라켓·앙카·볼트 | 레치인터내셔널</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* =========================================
+           브라켓·앙카·볼트 제품 페이지
+        ========================================= */
+
+        .bracket-product {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 90px 20px 120px;
+        }
+
+
+        /* =========================================
+           상단 제목
+        ========================================= */
+
+        .bracket-header {
+            text-align: center;
+            margin-bottom: 65px;
+        }
+
+        .bracket-header .product-number {
+            display: block;
+            margin-bottom: 20px;
+
+            color: #123f70;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 5px;
+        }
+
+        .bracket-header h1 {
+            margin: 0 0 25px;
+
+            color: #111;
+            font-size: 42px;
+            font-weight: 700;
+        }
+
+        .bracket-header p {
+            margin: 0;
+
+            color: #777;
+            font-size: 15px;
+            line-height: 1.9;
+        }
+
+
+        /* =========================================
+           제품 카드
+        ========================================= */
+
+        .bracket-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+
+            margin-bottom: 70px;
+        }
+
+        .bracket-card {
+            overflow: hidden;
+
+            background: #f6f8fa;
+            border: 1px solid #e1e6eb;
+            border-radius: 8px;
+
+            cursor: pointer;
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+        }
+
+        .bracket-card:hover {
+            transform: translateY(-5px);
+
+            border-color: #123f70;
+
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+
+
+        /* =========================================
+           카드 대표 이미지
+        ========================================= */
+
+        .bracket-card-image {
+            width: 100%;
+            height: 220px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 20px;
+            box-sizing: border-box;
+
+            background: #fff;
+        }
+
+        .bracket-card-image img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: contain;
+
+            display: block;
+        }
+
+
+        /* =========================================
+           카드 내용
+        ========================================= */
+
+        .bracket-card-content {
+            padding: 27px 28px 30px;
+
+            background: #f6f8fa;
+        }
+
+        .bracket-card-content h2 {
+            margin: 0 0 13px;
+
+            color: #123f70;
+            font-size: 21px;
+            font-weight: 700;
+        }
+
+        .bracket-card-content p {
+            min-height: 50px;
+
+            margin: 0 0 23px;
+
+            color: #666;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .bracket-card-more {
+            color: #123f70;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+
+        /* =========================================
+           상세 영역
+        ========================================= */
+
+        .bracket-detail {
+            display: none;
+
+            margin-top: 20px;
+            padding-top: 60px;
+
+            border-top: 1px solid #ddd;
+
+            text-align: center;
+
+            animation: bracketFade 0.4s ease;
+        }
+
+        @keyframes bracketFade {
+
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        }
+
+
+        .bracket-detail-number {
+            display: block;
+
+            margin-bottom: 16px;
+
+            color: #123f70;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 4px;
+        }
+
+        .bracket-detail h2 {
+            margin: 0 0 40px;
+
+            color: #111;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+
+        /* =========================================
+           클릭 후 크게 표시되는 이미지
+        ========================================= */
+
+        .bracket-detail-image {
+            width: 100%;
+            max-width: 1200px;
+
+            margin: 0 auto 45px;
+
+            background: #fff;
+        }
+
+        .bracket-detail-image img {
+            width: 100%;
+            height: auto;
+
+            display: block;
+            margin: 0 auto;
+        }
+
+
+        /* =========================================
+           뒤로가기
+        ========================================= */
+
+        .bracket-back {
+            display: inline-block;
+
+            padding: 14px 30px;
+
+            border: none;
+            border-radius: 4px;
+
+            background: #123f70;
+            color: #fff;
+
+            font-size: 14px;
+            font-weight: 600;
+
+            cursor: pointer;
+
+            transition: background 0.3s ease;
+        }
+
+        .bracket-back:hover {
+            background: #0b2e54;
+        }
+
+
+        /* =========================================
+           견적 문의
+        ========================================= */
+
+        .bracket-inquiry {
+            text-align: center;
+            margin-top: 65px;
+        }
+
+        .bracket-inquiry a {
+            display: inline-block;
+
+            padding: 16px 32px;
+
+            background: #123f70;
+            color: #fff;
+
+            border-radius: 4px;
+
+            font-size: 14px;
+            font-weight: 600;
+
+            text-decoration: none;
+
+            transition: background 0.3s ease;
+        }
+
+        .bracket-inquiry a:hover {
+            background: #0b2e54;
+        }
+
+
+        /* =========================================
+           모바일
+        ========================================= */
+
+        @media (max-width: 800px) {
+
+            .bracket-product {
+                padding: 70px 20px 90px;
+            }
+
+            .bracket-header {
+                margin-bottom: 45px;
+            }
+
+            .bracket-header h1 {
+                font-size: 32px;
+            }
+
+            .bracket-header p {
+                font-size: 14px;
+            }
+
+            .bracket-cards {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .bracket-card-image {
+                height: 230px;
+            }
+
+            .bracket-detail h2 {
+                font-size: 26px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     헤더
+========================================= -->
+
+<header class="header">
+
+    <div class="logo">
+
+        <a href="index.html">
+
+            <img
+                src="images/logo.png"
+                alt="레치인터내셔널 로고"
+            >
+
+        </a>
+
+    </div>
+
+
+    <nav class="menu">
+
+        <a href="index.html#about">
+            회사소개
+        </a>
+
+        <a href="index.html#products">
+            제품소개
+        </a>
+
+        <a href="index.html#custom">
+            주문제작
+        </a>
+
+        <a href="index.html#factory">
+            중국 생산공장
+        </a>
+
+        <a href="index.html#contact">
+            문의하기
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =========================================
+    브라켓·앙카·볼트
+========================================= -->
+
+<section class="bracket-product">
+
+
+    <!-- =====================================
+         페이지 제목
+    ====================================== -->
+
+    <div class="bracket-header">
+
+        <span class="product-number">
+            PRODUCT 03
+        </span>
+
+        <h1>
+            브라켓·앙카·볼트
+        </h1>
+
+        <p>
+            다양한 규격과 용도에 대응할 수 있는
+            산업용 금속 브라켓·앙카·볼트 제품입니다.
+        </p>
+
+    </div>
+
+
+
+    <!-- =====================================
+         제품 카드
+    ====================================== -->
+
+    <div
+        class="bracket-cards"
+        id="bracketCards"
+    >
+
+
+        <!-- =================================
+             01. 금속 브라켓
+        ================================== -->
+
+        <div
+            class="bracket-card"
+            onclick="showBracketProduct('bracket')"
+        >
+
+            <div class="bracket-card-image">
+
+                <!-- 카드 대표 이미지 -->
+
+                <img
+                    src="images/bracket-main.png"
+                    alt="금속 브라켓"
+                >
+
+            </div>
+
+
+            <div class="bracket-card-content">
+
+                <h2>
+                    금속 브라켓
+                </h2>
+
+                <p>
+                    배관 및 설비 고정에 사용되는
+                    다양한 형태의 금속 브라켓을 공급합니다.
+                </p>
+
+                <span class="bracket-card-more">
+                    자세히 보기&nbsp; +
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================
+             02. 웨지 앙카
+        ================================== -->
+
+        <div
+            class="bracket-card"
+            onclick="showBracketProduct('anchor')"
+        >
+
+            <div class="bracket-card-image">
+
+                <!-- 카드 대표 이미지 -->
+
+                <img
+                    src="images/anchor-main.png"
+                    alt="웨지 앙카"
+                >
+
+            </div>
+
+
+            <div class="bracket-card-content">
+
+                <h2>
+                    웨지 앙카
+                </h2>
+
+                <p>
+                    현장 조건과 설치 방식에 따라
+                    다양한 규격의 앙카 제품을 적용할 수 있습니다.
+                </p>
+
+                <span class="bracket-card-more">
+                    자세히 보기&nbsp; +
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================
+             03. 맞춤 제작
+        ================================== -->
+
+        <div
+            class="bracket-card"
+            onclick="showBracketProduct('custom')"
+        >
+
+            <div class="bracket-card-image">
+
+                <!-- 카드 대표 이미지 -->
+
+                <img
+                    src="images/bracket-custom-main.png"
+                    alt="브라켓 맞춤 제작"
+                >
+
+            </div>
+
+
+            <div class="bracket-card-content">
+
+                <h2>
+                    태양광 육각 용융 조립볼트 세트
+                </h2>
+
+                <p>
+                    태양광 구조물의 안정적인 체결을 위한 
+                    조립형 볼트 세트입니다.
+                </p>
+
+                <span class="bracket-card-more">
+                    자세히 보기&nbsp; +
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================
+         상세 제품 영역
+    ====================================== -->
+
+    <div
+        class="bracket-detail"
+        id="bracketDetail"
+    >
+
+
+        <span
+            class="bracket-detail-number"
+            id="bracketDetailNumber"
+        >
+            PRODUCT 03
+        </span>
+
+
+        <h2 id="bracketDetailTitle">
+            제품명
+        </h2>
+
+
+        <!--
+            클릭한 제품의
+            상세 이미지가 크게 표시됩니다.
+        -->
+
+        <div class="bracket-detail-image">
+
+            <img
+                id="bracketDetailImage"
+                src=""
+                alt=""
+            >
+
+        </div>
+
+
+        <!-- 뒤로가기 -->
+
+        <button
+            type="button"
+            class="bracket-back"
+            onclick="closeBracketProduct()"
+        >
+            ← 제품 목록으로 돌아가기
+        </button>
+
+
+    </div>
+
+
+
+    <!-- =====================================
+         견적 문의
+    ====================================== -->
+
+    <div class="bracket-inquiry">
+
+        <a href="contact.html">
+            제품 견적 문의하기
+        </a>
+
+    </div>
+
+
+
+<!-- 홈페이지로 돌아가기 -->
+
+<div class="bracket-home">
+
+    <a href="index.html">
+        ← 홈페이지로 돌아가기
+    </a>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================
+     JavaScript
+========================================= -->
+
+<script>
+
+
+/* =========================================
+   제품 클릭
+========================================= */
+
+function showBracketProduct(product) {
+
+    const cards =
+        document.getElementById("bracketCards");
+
+    const detail =
+        document.getElementById("bracketDetail");
+
+    const title =
+        document.getElementById("bracketDetailTitle");
+
+    const image =
+        document.getElementById("bracketDetailImage");
+
+    const number =
+        document.getElementById("bracketDetailNumber");
+
+
+    /* =====================================
+       금속 브라켓
+    ====================================== */
+
+    if (product === "bracket") {
+
+        number.innerText =
+            "PRODUCT 03 - 01";
+
+        title.innerText =
+            "금속 브라켓";
+
+        /*
+            카드 대표사진과 다른
+            상세 이미지
+        */
+
+        image.src =
+            "images/bracket-spec.png";
+
+        image.alt =
+            "금속 브라켓 상세 도면";
+
+    }
+
+
+    /* =====================================
+       웨지 앙카
+    ====================================== */
+
+    else if (product === "anchor") {
+
+        number.innerText =
+            "PRODUCT 03 - 02";
+
+        title.innerText =
+            "웨지 앙카";
+
+        image.src =
+            "images/anchor-spec.png";
+
+        image.alt =
+            "웨지 앙카 상세 도면";
+
+    }
+
+
+    /* =====================================
+       맞춤 제작
+    ====================================== */
+
+    else if (product === "custom") {
+
+        number.innerText =
+            "PRODUCT 03 - 03";
+
+        title.innerText =
+            "맞춤 제작";
+
+        image.src =
+            "images/bracket-custom-spec.png";
+
+        image.alt =
+            "브라켓 맞춤 제작 도면";
+
+    }
+
+
+    /* =====================================
+       카드 숨기기
+    ====================================== */
+
+    cards.style.display = "none";
+
+
+    /* =====================================
+       상세 영역 표시
+    ====================================== */
+
+    detail.style.display = "block";
+
+
+    /* =====================================
+       상세 영역으로 이동
+    ====================================== */
+
+    setTimeout(function() {
+
+        detail.scrollIntoView({
+
+            behavior: "smooth",
+
+            block: "start"
+
+        });
+
+    }, 50);
+
+}
+
+
+
+/* =========================================
+   뒤로가기
+========================================= */
+
+function closeBracketProduct() {
+
+    const cards =
+        document.getElementById("bracketCards");
+
+    const detail =
+        document.getElementById("bracketDetail");
+
+
+    /* 상세 영역 숨기기 */
+
+    detail.style.display = "none";
+
+
+    /* 카드 다시 표시 */
+
+    cards.style.display = "grid";
+
+
+    /* 페이지 위쪽으로 이동 */
+
+    window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+    });
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
