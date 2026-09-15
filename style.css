@@ -1608,3 +1608,693 @@ footer {
 .blog-button:hover {
     opacity: 0.85;
 }
+
+.product-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    padding: 22px 20px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e9ed;
+}
+
+.product-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    padding: 22px 20px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e9ed;
+    box-sizing: border-box;
+}
+
+.product-menu a {
+    display: inline-block;
+    padding: 8px 15px;
+
+    color: #333;
+    background: transparent;
+
+    border: none;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+.product-menu a:hover {
+    color: #123b68;
+}
+
+
+@media (max-width: 768px) {
+
+    .product-menu {
+        flex-wrap: wrap;
+        padding: 15px 10px;
+    }
+
+    .product-menu a {
+        padding: 7px 12px;
+        font-size: 13px;
+        margin: 3px 0;
+    }
+
+}
+
+/* =========================================
+   CHINA FACTORY
+========================================= */
+
+.factory-section {
+    width: 100%;
+    background: #ffffff;
+}
+
+
+/* 공장 이미지 */
+
+.factory-hero {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+}
+
+.factory-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.factory-hero-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 8%;
+    box-sizing: border-box;
+
+    background: linear-gradient(
+        90deg,
+        rgba(8, 39, 73, 0.92),
+        rgba(8, 39, 73, 0.45),
+        rgba(8, 39, 73, 0)
+    );
+
+    color: #ffffff;
+}
+
+.factory-hero-overlay span {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.factory-hero-overlay h2 {
+    font-size: 48px;
+    margin: 0;
+    font-weight: 700;
+}
+
+
+/* 전체 내용 */
+
+.factory-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 90px 30px 110px;
+    box-sizing: border-box;
+}
+
+
+/* A to Z */
+
+.factory-intro {
+    margin-bottom: 70px;
+}
+
+.section-label {
+    display: block;
+    margin-bottom: 14px;
+
+    color: #1b4f87;
+
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.factory-intro h2 {
+    margin: 0 0 20px;
+
+    color: #123b68;
+
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.factory-intro p {
+    max-width: 850px;
+
+    margin: 0;
+
+    color: #555;
+
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+
+/* 섹션 제목 */
+
+.process-title,
+.quality-title {
+    display: flex;
+    align-items: flex-start;
+
+    margin-bottom: 35px;
+}
+
+.process-title > span,
+.quality-title > span {
+    display: block;
+
+    width: 5px;
+    height: 46px;
+
+    margin-right: 18px;
+
+    background: #174d87;
+    border-radius: 3px;
+}
+
+.process-title h3,
+.quality-title h3 {
+    margin: 0;
+
+    color: #123b68;
+
+    font-size: 28px;
+}
+
+.process-title p,
+.quality-title p {
+    margin: 5px 0 0;
+
+    color: #6c91b9;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   생산공정
+========================================= */
+
+.process-section {
+    margin-bottom: 90px;
+}
+
+.process-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 18px;
+}
+
+.process-card {
+    position: relative;
+
+    padding-bottom: 10px;
+}
+
+.process-number {
+    position: absolute;
+
+    top: -12px;
+    left: -5px;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #123b68;
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    z-index: 2;
+}
+
+.process-image {
+    width: 100%;
+    height: 175px;
+
+    overflow: hidden;
+
+    border-radius: 5px;
+
+    margin-bottom: 18px;
+}
+
+.process-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.process-card:hover .process-image img {
+    transform: scale(1.05);
+}
+
+.process-card h4 {
+    margin: 0 0 5px;
+
+    color: #222;
+
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.process-en {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #6185ad;
+
+    font-size: 12px;
+}
+
+.process-card p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   품질보증
+========================================= */
+
+.quality-section {
+    padding: 70px 0;
+
+    background: #f5f8fb;
+}
+
+.quality-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.quality-card {
+    padding: 35px 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5eaf0;
+
+    border-radius: 6px;
+
+    box-sizing: border-box;
+}
+
+.quality-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+    border: 2px solid #174d87;
+
+    border-radius: 50%;
+
+    color: #174d87;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.quality-card h4 {
+    margin: 0 0 15px;
+
+    color: #123b68;
+
+    font-size: 20px;
+}
+
+.quality-card p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .factory-hero {
+        height: 330px;
+    }
+
+    .factory-hero-overlay {
+        padding-left: 30px;
+    }
+
+    .factory-hero-overlay h2 {
+        font-size: 38px;
+    }
+
+    .process-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .quality-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .factory-hero {
+        height: 260px;
+    }
+
+    .factory-hero-overlay h2 {
+        font-size: 30px;
+    }
+
+    .factory-content {
+        padding: 60px 20px 70px;
+    }
+
+    .factory-intro h2 {
+        font-size: 28px;
+    }
+
+    .factory-intro p {
+        font-size: 14px;
+    }
+
+    .process-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .process-title h3,
+    .quality-title h3 {
+        font-size: 23px;
+    }
+
+}
+
+/* =====================================
+   주문제작 제품 페이지
+====================================== */
+
+.custom-product-page {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 30px 100px;
+    box-sizing: border-box;
+}
+
+
+/* 페이지 헤더 */
+
+.custom-product-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.custom-product-number {
+    display: block;
+    margin-bottom: 15px;
+    color: #123b68;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.custom-product-header h1 {
+    margin: 0 0 18px;
+    color: #111;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.custom-product-header p {
+    margin: 0;
+    color: #666;
+    font-size: 17px;
+}
+
+
+/* 주문제작 소개 */
+
+.custom-product-intro {
+    max-width: 850px;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+
+.custom-product-intro h2 {
+    margin-bottom: 20px;
+    color: #222;
+    font-size: 28px;
+}
+
+.custom-product-intro p {
+    margin: 8px 0;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =====================================
+   제품 이미지 갤러리
+====================================== */
+
+.custom-product-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 90px;
+}
+
+.custom-product-item {
+    overflow: hidden;
+    background: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+}
+
+.custom-product-item img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.custom-product-item:hover img {
+    transform: scale(1.04);
+}
+
+
+/* =====================================
+   주문제작 특징
+====================================== */
+
+.custom-product-bottom {
+    padding: 60px 40px;
+    background: #f7f8fa;
+    text-align: center;
+}
+
+.custom-product-bottom h2 {
+    margin: 0 0 40px;
+    color: #222;
+    font-size: 28px;
+}
+
+.custom-product-features {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.custom-product-features div {
+    padding: 25px 10px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+}
+
+.custom-product-features strong {
+    display: block;
+    margin-bottom: 10px;
+    color: #123b68;
+    font-size: 13px;
+}
+
+.custom-product-features span {
+    display: block;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.custom-product-bottom p {
+    margin: 0 auto 30px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* 문의 버튼 */
+
+.custom-product-contact {
+    display: inline-block;
+    padding: 15px 35px;
+    background: #123b68;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.custom-product-contact:hover {
+    background: #0d2b4d;
+}
+
+
+/* =====================================
+   이미지 확대 모달
+====================================== */
+
+.custom-image-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.custom-image-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.custom-image-close {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+
+/* =====================================
+   모바일
+====================================== */
+
+@media (max-width: 768px) {
+
+    .custom-product-page {
+        padding: 60px 20px 80px;
+    }
+
+    .custom-product-header h1 {
+        font-size: 32px;
+    }
+
+    .custom-product-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .custom-product-features {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .custom-product-bottom {
+        padding: 45px 20px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .custom-product-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .custom-product-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
