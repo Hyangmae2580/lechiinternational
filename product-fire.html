@@ -537,7 +537,7 @@
 
 
         <!-- =================================
-             03. 주문제작 제품
+             03. 보드고정클램프
         ================================== -->
 
         <div
@@ -574,7 +574,120 @@
             </div>
 
         </div>
+<!-- =================================
+     04. 방진마운트
+================================== -->
 
+<div
+    class="fire-card"
+    onclick="showFireProduct('vibration-mount')"
+>
+
+    <div class="fire-card-image">
+
+        <img
+            src="images/vibration-mount-main.png"
+            alt="방진마운트"
+        >
+
+    </div>
+
+
+    <div class="fire-card-content">
+
+        <h2>
+            방진마운트
+        </h2>
+
+        <p>
+            설비의 진동과 소음을 효과적으로 저감하는 방진 제품입니다.
+        </p>
+
+        <span class="fire-card-more">
+            자세히 보기&nbsp; +
+        </span>
+
+    </div>
+
+</div>
+
+
+
+<!-- =================================
+     05. 방진패드
+================================== -->
+
+<div
+    class="fire-card"
+    onclick="showFireProduct('vibration-pad')"
+>
+
+    <div class="fire-card-image">
+
+        <img
+            src="images/vibration-pad-main.png"
+            alt="방진패드"
+        >
+
+    </div>
+
+
+    <div class="fire-card-content">
+
+        <h2>
+            방진패드
+        </h2>
+
+        <p>
+            진동과 충격을 흡수하여 설비의 안정성을 높이는 제품입니다.
+        </p>
+
+        <span class="fire-card-more">
+            자세히 보기&nbsp; +
+        </span>
+
+    </div>
+
+</div>
+
+
+
+<!-- =================================
+     06. 흡음재
+================================== -->
+
+<div
+    class="fire-card"
+    onclick="showFireProduct('acoustic')"
+>
+
+    <div class="fire-card-image">
+
+        <img
+            src="images/acoustic-main.png"
+            alt="흡음재"
+        >
+
+    </div>
+
+
+    <div class="fire-card-content">
+
+        <h2>
+            흡음재
+        </h2>
+
+        <p>
+            실내 및 산업 공간의 소음을 저감하고 음향 환경을 개선하는 제품입니다.
+        </p>
+
+        <span class="fire-card-more">
+            자세히 보기&nbsp; +
+        </span>
+
+    </div>
+
+</div>
 
     </div>
 
@@ -730,7 +843,7 @@ function showFireProduct(product) {
 
 
     /* =====================================
-       주문제작 제품
+       보드고정 클램프
     ====================================== */
 
     else if (product === "custom") {
@@ -739,10 +852,65 @@ function showFireProduct(product) {
             "PRODUCT 01 - 03";
 
         title.innerText =
-            "주문제작 제품";
+            "보드고정 클램프";
 
         image.src =
             "images/fire-custom-spec.png";
+
+        image.alt =
+            "소방내진 주문제작 제품 상세 도면";
+
+    }
+    /* =====================================
+       방진마운트
+    ====================================== */
+
+    else if (product === "vibration-mount") {
+
+        number.innerText =
+            "PRODUCT 01 - 04";
+
+        title.innerText =
+            "방진마운트";
+
+        image.src =
+            "images/vibration-spec.png";
+
+        image.alt =
+            "소방내진 주문제작 제품 상세 도면";
+
+    }    /* =====================================
+       방진패드
+    ====================================== */
+
+    else if (product === "vibration-pad") {
+
+        number.innerText =
+            "PRODUCT 01 - 05";
+
+        title.innerText =
+            "방진패드";
+
+        image.src =
+            "images/vibration-pad.png";
+
+        image.alt =
+            "소방내진 주문제작 제품 상세 도면";
+
+    }    /* =====================================
+       흡음재
+    ====================================== */
+
+    else if (product === "acoustic") {
+
+        number.innerText =
+            "PRODUCT 01 - 06";
+
+        title.innerText =
+            "흡음재";
+
+        image.src =
+            "images/acoustic-spec.png";
 
         image.alt =
             "소방내진 주문제작 제품 상세 도면";
