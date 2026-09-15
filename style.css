@@ -31,7 +31,6 @@ img {
 }
 
 
-
 /* =========================================
    HEADER
 ========================================= */
@@ -76,6 +75,7 @@ img {
     color: #1d426d;
 }
 
+
 /* =========================================
    MAIN HERO
 ========================================= */
@@ -83,15 +83,20 @@ img {
 .hero {
     width: 100%;
     min-height: 360px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     padding: 60px 8% 30px;
     box-sizing: border-box;
+
     background: #123b68;
     color: #fff;
+
     text-align: center;
 }
+
 .hero-text {
     width: 100%;
     max-width: 900px;
@@ -100,6 +105,7 @@ img {
 
 .small-title {
     margin: 0 0 8px;
+
     font-size: 12px;
     letter-spacing: 3px;
     font-weight: 600;
@@ -107,6 +113,7 @@ img {
 
 .hero h1 {
     margin: 0 0 12px;
+
     font-size: 36px;
     line-height: 1.2;
     font-weight: 700;
@@ -132,27 +139,23 @@ img {
     cursor: pointer;
 }
 
+
 /* =========================================
    회사소개
 ========================================= */
 
 .section {
     width: 100%;
-
     padding: 110px 7%;
-
     text-align: center;
 }
-
 
 .section h2 {
     margin: 0 0 30px;
 
     font-size: 40px;
-
     color: #17202a;
 }
-
 
 .section > p {
     max-width: 800px;
@@ -160,7 +163,6 @@ img {
     margin: 10px auto;
 
     font-size: 16px;
-
     color: #666;
 }
 
@@ -181,7 +183,6 @@ img {
     border-bottom: 1px solid #ddd;
 }
 
-
 .company-info div {
     padding: 28px 20px;
 
@@ -192,21 +193,17 @@ img {
     border-right: none;
 }
 
-
 .company-info strong {
     display: block;
 
     margin-bottom: 8px;
 
     color: #1d426d;
-
     font-size: 14px;
 }
 
-
 .company-info p {
     margin: 0;
-
     font-size: 16px;
 }
 
@@ -217,7 +214,9 @@ img {
 
 .products-section {
     width: 100%;
+
     padding: 55px 6%;
+
     background: #f6f8fa;
 }
 
@@ -226,10 +225,8 @@ img {
 
 .products-title {
     text-align: center;
-
     margin-bottom: 30px;
 }
-
 
 .products-title span {
     display: block;
@@ -239,29 +236,23 @@ img {
     color: #1d426d;
 
     font-size: 13px;
-
     font-weight: 700;
-
     letter-spacing: 4px;
 }
-
 
 .products-title h2 {
     margin: 0;
 
     font-size: 42px;
-
     line-height: 1.3;
 
     color: #17202a;
 }
 
-
 .products-title p {
     margin: 18px 0 0;
 
     font-size: 16px;
-
     color: #777;
 }
 
@@ -303,7 +294,6 @@ img {
         box-shadow 0.3s ease;
 }
 
-
 .product-card:hover {
     transform: translateY(-8px);
 
@@ -324,7 +314,6 @@ img {
     background: #f3f3f3;
 }
 
-
 .product-photo img {
     width: 100%;
     height: 100%;
@@ -336,7 +325,6 @@ img {
     transition: transform 0.5s ease;
 }
 
-
 .product-card:hover
 .product-photo img {
     transform: scale(1.05);
@@ -347,30 +335,23 @@ img {
 
 .product-content {
     padding: 30px;
-
     min-height: 260px;
 }
-
 
 .product-number {
     color: #1d426d;
 
     font-size: 13px;
-
     font-weight: 700;
-
     letter-spacing: 2px;
 }
-
 
 .product-content h3 {
     margin: 12px 0 14px;
 
     font-size: 24px;
-
     color: #17202a;
 }
-
 
 .product-content p {
     margin: 0;
@@ -378,7 +359,6 @@ img {
     color: #666;
 
     font-size: 15px;
-
     line-height: 1.8;
 }
 
@@ -401,19 +381,15 @@ img {
     text-decoration: none;
 
     font-size: 14px;
-
     font-weight: 600;
 
     border-bottom: 1px solid #1d426d;
 }
 
-
 .product-more span {
     font-size: 18px;
-
     transition: 0.3s;
 }
-
 
 .product-more:hover span {
     transform: translateX(5px);
@@ -436,13 +412,10 @@ img {
     color: #fff;
 }
 
-
 .custom h2 {
     margin: 0 0 25px;
-
     font-size: 40px;
 }
-
 
 .custom p {
     max-width: 750px;
@@ -450,12 +423,10 @@ img {
     margin: 8px auto;
 
     font-size: 17px;
-
     line-height: 1.9;
 
     color: #ddd;
 }
-
 
 .custom button {
     margin-top: 30px;
@@ -465,7 +436,6 @@ img {
     border: 1px solid #fff;
 
     background: transparent;
-
     color: #fff;
 
     font-size: 15px;
@@ -475,10 +445,8 @@ img {
     transition: 0.3s;
 }
 
-
 .custom button:hover {
     background: #fff;
-
     color: #17202a;
 }
 
@@ -488,9 +456,8 @@ img {
 ========================================= */
 
 #factory {
-    background: #fff;
+    background: #f5f8fb;
 }
-
 
 #factory p {
     max-width: 750px;
@@ -511,17 +478,13 @@ img {
     background: #f6f8fa;
 }
 
-
 .contact h2 {
     margin: 0 0 25px;
-
     font-size: 40px;
 }
 
-
 .contact > p {
     color: #666;
-
     font-size: 16px;
 }
 
@@ -541,7 +504,6 @@ img {
     gap: 20px;
 }
 
-
 .contact-info p {
     margin: 0;
 
@@ -550,14 +512,12 @@ img {
     background: #fff;
 
     border: 1px solid #e5e5e5;
-
     border-radius: 6px;
 
     color: #555;
 
     line-height: 1.8;
 }
-
 
 .contact-info strong {
     display: block;
@@ -588,18 +548,14 @@ footer {
     font-size: 13px;
 }
 
-
 .footer-company strong {
     color: #fff;
-
     font-size: 17px;
 }
-
 
 .footer-company p {
     margin: 6px 0;
 }
-
 
 .copyright {
     margin-top: 30px;
@@ -616,90 +572,90 @@ footer {
 
 @media (max-width: 900px) {
 
-  .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 82px;
-    padding: 0 25px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    background: transparent;
-    border-bottom: none;
-    z-index: 999;
-}
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 82px;
+        padding: 0 25px;
 
-.logo {
-    display: none;
-}
+        box-sizing: border-box;
 
-.menu {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
 
-.menu a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 500;
-}
+        background: transparent;
+        border-bottom: none;
 
+        z-index: 999;
+    }
 
-  .hero {
-    width: 100%;
-    min-height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 8% 40px;
-    box-sizing: border-box;
-    background: #123b68;
-    color: #fff;
-    text-align: center;
-}
+    .logo {
+        display: none;
+    }
 
+    .menu {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .menu a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .hero {
+        width: 100%;
+        min-height: 400px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 100px 8% 40px;
+
+        box-sizing: border-box;
+
+        background: #123b68;
+
+        color: #fff;
+
+        text-align: center;
+    }
 
     .hero p {
         font-size: 16px;
     }
 
-
     .product-grid {
         grid-template-columns: 1fr;
-
         max-width: 550px;
     }
-
 
     .company-info {
         grid-template-columns: 1fr;
     }
 
-
     .company-info div {
         border-right: none;
-
         border-bottom: 1px solid #ddd;
     }
-
 
     .company-info div:last-child {
         border-bottom: none;
     }
 
-
     .contact-info {
         grid-template-columns: 1fr;
-
         max-width: 550px;
     }
-
 }
+
 
 /* =========================================
    견적 문의 페이지
@@ -707,21 +663,18 @@ footer {
 
 .inquiry-section {
     width: 100%;
+
     padding: 100px 20px 120px;
+
     background: #f4f7fa;
 }
-
-
-/* 문의 전체 영역 */
 
 .inquiry-container {
     width: 100%;
     max-width: 1000px;
+
     margin: 0 auto;
 }
-
-
-/* 제목 */
 
 .inquiry-title {
     text-align: center;
@@ -730,6 +683,7 @@ footer {
 
 .inquiry-title span {
     display: block;
+
     margin-bottom: 10px;
 
     color: #1d426d;
@@ -781,21 +735,17 @@ footer {
     margin-bottom: 25px;
 }
 
-
-/* 성명 / 회사명 / 연락처 / 이메일 등을 2칸으로 */
-
 .inquiry-form .form-group:nth-child(4),
 .inquiry-form .form-group:nth-child(5),
 .inquiry-form .form-group:nth-child(6),
 .inquiry-form .form-group:nth-child(7),
 .inquiry-form .form-group:nth-child(8) {
     width: calc(50% - 10px);
+
     display: inline-block;
+
     vertical-align: top;
 }
-
-
-/* 두 번째 칸 */
 
 .inquiry-form .form-group:nth-child(5),
 .inquiry-form .form-group:nth-child(7) {
@@ -815,9 +765,6 @@ footer {
     font-size: 15px;
     font-weight: 600;
 }
-
-
-/* 필수 표시 */
 
 .form-group label em {
     color: #d65a3a;
@@ -846,7 +793,6 @@ footer {
     color: #333;
 
     font-family: inherit;
-
     font-size: 15px;
 
     outline: none;
@@ -855,9 +801,6 @@ footer {
 
     appearance: none;
 }
-
-
-/* 포커스 */
 
 .form-group input:focus,
 .form-group select:focus,
@@ -977,7 +920,6 @@ footer {
     font-family: inherit;
 
     font-size: 16px;
-
     font-weight: 600;
 
     cursor: pointer;
@@ -1017,8 +959,6 @@ footer {
         padding: 30px 20px;
     }
 
-    /* 모바일에서는 전부 한 줄 */
-
     .inquiry-form .form-group:nth-child(4),
     .inquiry-form .form-group:nth-child(5),
     .inquiry-form .form-group:nth-child(6),
@@ -1031,18 +971,22 @@ footer {
 
         margin-left: 0;
     }
-
 }
+
 
 .inquiry-button {
     display: inline-block;
+
     margin-top: 30px;
+
     padding: 15px 35px;
 
     border: 1px solid #fff;
+
     border-radius: 5px;
 
     background: transparent;
+
     color: #fff;
 
     text-decoration: none;
@@ -1059,6 +1003,8 @@ footer {
     background: #fff;
     color: #123b68;
 }
+
+
 /* =================================
    레치인터내셔널 로고
 ================================= */
@@ -1068,6 +1014,7 @@ footer {
     height: 78px;
 
     display: flex;
+
     align-items: center;
     justify-content: flex-start;
 
@@ -1084,20 +1031,25 @@ footer {
     height: auto;
 
     display: block;
+
     margin: 0;
     padding: 0;
 
     object-fit: contain;
 }
 
+
 /* 로고 왼쪽 정렬 */
+
 .header-inner {
     width: 100%;
     height: 72px;
+
     margin: 0;
     padding: 0 40px;
 
     display: flex;
+
     align-items: center;
     justify-content: space-between;
 
@@ -1109,6 +1061,7 @@ footer {
     padding: 0;
 
     display: flex;
+
     align-items: center;
     justify-content: flex-start;
 
@@ -1118,26 +1071,31 @@ footer {
 .header-logo img {
     width: 165px;
     height: auto;
+
     display: block;
+
     margin: 0;
     padding: 0;
 }
+
+
 /* =========================
    제품 상세 페이지
 ========================= */
 
 .product-detail {
     max-width: 1200px;
+
     margin: 0 auto;
+
     padding: 100px 40px;
 }
 
-
 .product-detail-title {
     text-align: center;
+
     margin-bottom: 70px;
 }
-
 
 .product-detail-title span {
     display: block;
@@ -1147,12 +1105,10 @@ footer {
     color: #123b68;
 
     font-size: 14px;
-
     font-weight: 700;
 
     letter-spacing: 4px;
 }
-
 
 .product-detail-title h1 {
     margin: 0 0 20px;
@@ -1160,16 +1116,13 @@ footer {
     color: #111;
 
     font-size: 46px;
-
     font-weight: 700;
 }
-
 
 .product-detail-title p {
     color: #666;
 
     font-size: 17px;
-
     line-height: 1.8;
 }
 
@@ -1179,11 +1132,11 @@ footer {
 .product-detail-list {
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns:
+        repeat(3, 1fr);
 
     gap: 25px;
 }
-
 
 .detail-item {
     padding: 35px;
@@ -1197,13 +1150,12 @@ footer {
     transition: 0.3s;
 }
 
-
 .detail-item:hover {
     transform: translateY(-5px);
 
-    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.08);
 }
-
 
 .detail-item h2 {
     margin-bottom: 18px;
@@ -1213,14 +1165,12 @@ footer {
     font-size: 22px;
 }
 
-
 .detail-item p {
     margin: 0;
 
     color: #666;
 
     font-size: 15px;
-
     line-height: 1.8;
 }
 
@@ -1232,7 +1182,6 @@ footer {
 
     text-align: center;
 }
-
 
 .back-button a {
     display: inline-block;
@@ -1251,7 +1200,6 @@ footer {
 
     transition: 0.3s;
 }
-
 
 .back-button a:hover {
     background: #0b2949;
@@ -1273,20 +1221,24 @@ footer {
     .product-detail-list {
         grid-template-columns: 1fr;
     }
-
 }
+
+
 /* =========================
    방진 제품 상세페이지
 ========================= */
 
 .vibration-product {
     max-width: 1200px;
+
     margin: 0 auto;
+
     padding: 80px 20px;
 }
 
 .vibration-product h1 {
     font-size: 36px;
+
     margin-bottom: 50px;
 }
 
@@ -1296,24 +1248,30 @@ footer {
 
 .vibration-item h2 {
     font-size: 22px;
+
     font-weight: 500;
+
     margin-bottom: 25px;
 }
 
 .vibration-catalog img {
     width: 60%;
+
     max-width: 800px;
+
     height: auto;
+
     display: block;
 }
+
 
 /* 제목 */
 
 .vibration-title {
     text-align: center;
+
     margin-bottom: 60px;
 }
-
 
 .vibration-title span {
     display: block;
@@ -1329,7 +1287,6 @@ footer {
     letter-spacing: 4px;
 }
 
-
 .vibration-title h1 {
     margin: 0 0 20px;
 
@@ -1339,7 +1296,6 @@ footer {
 
     font-weight: 700;
 }
-
 
 .vibration-title p {
     margin: 0;
@@ -1356,9 +1312,13 @@ footer {
 
 .vibration-catalog img {
     width: 60%;
+
     max-width: 800px;
+
     height: auto;
+
     display: block;
+
     margin: 0 auto;
 }
 
@@ -1370,7 +1330,6 @@ footer {
 
     margin-top: 50px;
 }
-
 
 .vibration-inquiry a {
     display: inline-block;
@@ -1392,18 +1351,16 @@ footer {
     transition: 0.3s;
 }
 
-
 .vibration-inquiry a:hover {
     background: #0d2d50;
 }
 
 
-/* 제품 목록 */
-
 /* 제품 목록으로 돌아가기 버튼 */
 
 .vibration-product .back-button {
     margin-top: 30px;
+
     text-align: center;
 }
 
@@ -1413,14 +1370,17 @@ footer {
     padding: 15px 30px;
 
     background: #123b68;
+
     color: #ffffff !important;
 
     border: 1px solid #123b68;
+
     border-radius: 5px;
 
     text-decoration: none;
 
     font-size: 15px;
+
     font-weight: 600;
 
     transition: 0.3s;
@@ -1428,6 +1388,7 @@ footer {
 
 .vibration-product .back-button a:hover {
     background: #ffffff;
+
     color: #123b68 !important;
 }
 
@@ -1440,102 +1401,145 @@ footer {
         padding: 70px 20px;
     }
 
-
     .vibration-title h1 {
         font-size: 34px;
     }
 
-
     .vibration-title p {
         font-size: 14px;
     }
-
 }
+
+
 /* 방진 제품 상세페이지 */
+
 .vibration-product {
     max-width: 1200px;
+
     margin: 0 auto;
+
     padding: 80px 20px;
 }
 
 .vibration-product h1 {
     font-size: 36px;
+
     margin-bottom: 45px;
 }
 
+
 /* 제품 항목 */
+
 .vibration-item {
     width: 100%;
+
     margin-bottom: 35px;
 }
 
+
 /* 제품 이름 */
+
 .vibration-item summary {
     cursor: pointer;
+
     font-size: 21px;
+
     font-weight: 500;
+
     padding: 10px 0;
+
     margin-left: 0;
+
     list-style: none;
 }
 
+
 /* 기본 ▶ 표시 제거 */
+
 .vibration-item summary::-webkit-details-marker {
     display: none;
 }
 
+
 /* 제품 이름 앞에 + 표시 */
+
 .vibration-item summary::before {
     content: "+";
+
     display: inline-block;
+
     width: 25px;
+
     font-size: 20px;
+
     font-weight: 400;
 }
 
+
 /* 클릭해서 열렸을 때 - 표시 */
+
 .vibration-item[open] summary::before {
     content: "−";
 }
 
+
 /* 제품 이미지 */
+
 .vibration-image {
     margin-top: 20px;
+
     margin-left: 25px;
 }
 
 .vibration-image img {
     width: 60%;
+
     max-width: 800px;
+
     height: auto;
+
     display: block;
 }
 
+
 /* 제품 목록으로 돌아가기 */
+
 .vibration-product .back-button {
     margin-top: 50px;
+
     text-align: center;
 }
 
 .vibration-product .back-button a {
     display: inline-block;
+
     padding: 15px 30px;
+
     background: #123b68;
+
     color: #ffffff !important;
+
     border: 1px solid #123b68;
+
     border-radius: 5px;
+
     text-decoration: none;
+
     font-size: 15px;
+
     font-weight: 600;
 }
 
 .vibration-product .back-button a:hover {
     background: #ffffff;
+
     color: #123b68 !important;
 }
 
+
 .bracket-home {
     text-align: center;
+
     margin-top: 20px;
 }
 
@@ -1545,12 +1549,15 @@ footer {
     padding: 14px 30px;
 
     background: #fff;
+
     color: #123f70;
 
     border: 1px solid #123f70;
+
     border-radius: 4px;
 
     font-size: 14px;
+
     font-weight: 600;
 
     text-decoration: none;
@@ -1560,11 +1567,14 @@ footer {
 
 .bracket-home a:hover {
     background: #123f70;
+
     color: #fff;
 }
 
+
 .custom-home {
     text-align: center;
+
     margin-top: 20px;
 }
 
@@ -1574,12 +1584,15 @@ footer {
     padding: 14px 30px;
 
     background: #fff;
+
     color: #123f70;
 
     border: 1px solid #123f70;
+
     border-radius: 4px;
 
     font-size: 14px;
+
     font-weight: 600;
 
     text-decoration: none;
@@ -1589,19 +1602,30 @@ footer {
 
 .custom-home a:hover {
     background: #123f70;
+
     color: #fff;
 }
 
+
 .blog-button {
     display: inline-block;
+
     margin-left: 12px;
+
     padding: 12px 22px;
+
     background: #0f2747;
+
     color: #ffffff;
+
     text-decoration: none;
+
     border-radius: 4px;
+
     font-size: 14px;
+
     font-weight: 500;
+
     transition: 0.3s;
 }
 
@@ -1609,34 +1633,54 @@ footer {
     opacity: 0.85;
 }
 
+
+/* 제품 메뉴 */
+
 .product-menu {
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     gap: 0;
+
     width: 100%;
+
     padding: 22px 20px;
+
     background: #ffffff;
+
     border-bottom: 1px solid #e5e9ed;
 }
 
 .product-menu {
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     gap: 25px;
+
     width: 100%;
+
     padding: 22px 20px;
+
     background: #ffffff;
+
     border-bottom: 1px solid #e5e9ed;
+
     box-sizing: border-box;
 }
 
 .product-menu a {
     display: inline-block;
+
     padding: 8px 15px;
 
     color: #333;
+
     background: transparent;
 
     border: none;
@@ -1644,6 +1688,7 @@ footer {
     text-decoration: none;
 
     font-size: 14px;
+
     font-weight: 500;
 
     transition: all 0.3s ease;
@@ -1658,16 +1703,19 @@ footer {
 
     .product-menu {
         flex-wrap: wrap;
+
         padding: 15px 10px;
     }
 
     .product-menu a {
         padding: 7px 12px;
+
         font-size: 13px;
+
         margin: 3px 0;
     }
-
 }
+
 
 /* =========================================
    CHINA FACTORY
@@ -1675,7 +1723,9 @@ footer {
 
 .factory-section {
     width: 100%;
-    background: #ffffff;
+
+    /* 변경: 사용자가 지정한 배경색 */
+    background: #f5f8fb;
 }
 
 
@@ -1683,19 +1733,25 @@ footer {
 
 .factory-hero {
     position: relative;
+
     width: 100%;
+
     height: 420px;
+
     overflow: hidden;
 }
 
 .factory-hero img {
     width: 100%;
+
     height: 100%;
+
     object-fit: cover;
 }
 
 .factory-hero-overlay {
     position: absolute;
+
     left: 0;
     top: 0;
 
@@ -1703,10 +1759,13 @@ footer {
     height: 100%;
 
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
 
     padding-left: 8%;
+
     box-sizing: border-box;
 
     background: linear-gradient(
@@ -1721,13 +1780,17 @@ footer {
 
 .factory-hero-overlay span {
     font-size: 14px;
+
     letter-spacing: 2px;
+
     margin-bottom: 12px;
 }
 
 .factory-hero-overlay h2 {
     font-size: 48px;
+
     margin: 0;
+
     font-weight: 700;
 }
 
@@ -1736,9 +1799,15 @@ footer {
 
 .factory-content {
     max-width: 1200px;
+
     margin: 0 auto;
+
     padding: 90px 30px 110px;
+
     box-sizing: border-box;
+
+    /* 변경 */
+    background: #f5f8fb;
 }
 
 
@@ -1746,16 +1815,22 @@ footer {
 
 .factory-intro {
     margin-bottom: 70px;
+
+    /* 변경 */
+    background: #f5f8fb;
 }
 
 .section-label {
     display: block;
+
     margin-bottom: 14px;
 
     color: #1b4f87;
 
     font-size: 13px;
+
     font-weight: 600;
+
     letter-spacing: 2px;
 }
 
@@ -1765,6 +1840,7 @@ footer {
     color: #123b68;
 
     font-size: 38px;
+
     font-weight: 700;
 }
 
@@ -1776,6 +1852,7 @@ footer {
     color: #555;
 
     font-size: 16px;
+
     line-height: 1.9;
 }
 
@@ -1785,6 +1862,7 @@ footer {
 .process-title,
 .quality-title {
     display: flex;
+
     align-items: flex-start;
 
     margin-bottom: 35px;
@@ -1795,11 +1873,13 @@ footer {
     display: block;
 
     width: 5px;
+
     height: 46px;
 
     margin-right: 18px;
 
     background: #174d87;
+
     border-radius: 3px;
 }
 
@@ -1828,6 +1908,9 @@ footer {
 
 .process-section {
     margin-bottom: 90px;
+
+    /* 변경 */
+    background: #f5f8fb;
 }
 
 .process-grid {
@@ -1843,27 +1926,35 @@ footer {
     position: relative;
 
     padding-bottom: 10px;
+
+    background: transparent;
 }
 
 .process-number {
     position: absolute;
 
     top: -12px;
+
     left: -5px;
 
     width: 48px;
+
     height: 48px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     background: #123b68;
+
     color: #ffffff;
 
     border-radius: 50%;
 
     font-size: 14px;
+
     font-weight: 600;
 
     z-index: 2;
@@ -1871,6 +1962,7 @@ footer {
 
 .process-image {
     width: 100%;
+
     height: 175px;
 
     overflow: hidden;
@@ -1882,6 +1974,7 @@ footer {
 
 .process-image img {
     width: 100%;
+
     height: 100%;
 
     object-fit: cover;
@@ -1899,6 +1992,7 @@ footer {
     color: #222;
 
     font-size: 17px;
+
     font-weight: 700;
 }
 
@@ -1918,6 +2012,7 @@ footer {
     color: #666;
 
     font-size: 13px;
+
     line-height: 1.7;
 }
 
@@ -1929,6 +2024,7 @@ footer {
 .quality-section {
     padding: 70px 0;
 
+    /* 이미 사용하던 색상과 동일 */
     background: #f5f8fb;
 }
 
@@ -1944,6 +2040,7 @@ footer {
 .quality-card {
     padding: 35px 30px;
 
+    /* 카드 자체는 흰색 유지 */
     background: #ffffff;
 
     border: 1px solid #e5eaf0;
@@ -1955,10 +2052,13 @@ footer {
 
 .quality-icon {
     width: 48px;
+
     height: 48px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     margin-bottom: 22px;
@@ -1970,6 +2070,7 @@ footer {
     color: #174d87;
 
     font-size: 13px;
+
     font-weight: 700;
 }
 
@@ -1987,6 +2088,7 @@ footer {
     color: #666;
 
     font-size: 14px;
+
     line-height: 1.8;
 }
 
@@ -2018,7 +2120,6 @@ footer {
         grid-template-columns:
             1fr;
     }
-
 }
 
 
@@ -2034,6 +2135,8 @@ footer {
 
     .factory-content {
         padding: 60px 20px 70px;
+
+        background: #f5f8fb;
     }
 
     .factory-intro h2 {
@@ -2053,8 +2156,8 @@ footer {
     .quality-title h3 {
         font-size: 23px;
     }
-
 }
+
 
 /* =====================================
    주문제작 제품 페이지
@@ -2062,9 +2165,13 @@ footer {
 
 .custom-product-page {
     width: 100%;
+
     max-width: 1200px;
+
     margin: 0 auto;
+
     padding: 80px 30px 100px;
+
     box-sizing: border-box;
 }
 
@@ -2073,28 +2180,39 @@ footer {
 
 .custom-product-header {
     text-align: center;
+
     margin-bottom: 70px;
 }
 
 .custom-product-number {
     display: block;
+
     margin-bottom: 15px;
+
     color: #123b68;
+
     font-size: 13px;
+
     font-weight: 600;
+
     letter-spacing: 2px;
 }
 
 .custom-product-header h1 {
     margin: 0 0 18px;
+
     color: #111;
+
     font-size: 42px;
+
     font-weight: 700;
 }
 
 .custom-product-header p {
     margin: 0;
+
     color: #666;
+
     font-size: 17px;
 }
 
@@ -2103,20 +2221,27 @@ footer {
 
 .custom-product-intro {
     max-width: 850px;
+
     margin: 0 auto 70px;
+
     text-align: center;
 }
 
 .custom-product-intro h2 {
     margin-bottom: 20px;
+
     color: #222;
+
     font-size: 28px;
 }
 
 .custom-product-intro p {
     margin: 8px 0;
+
     color: #666;
+
     font-size: 15px;
+
     line-height: 1.8;
 }
 
@@ -2127,23 +2252,34 @@ footer {
 
 .custom-product-gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
     gap: 24px;
+
     margin-bottom: 90px;
 }
 
 .custom-product-item {
     overflow: hidden;
+
     background: #f5f5f5;
+
     border: 1px solid #e5e5e5;
+
     cursor: pointer;
 }
 
 .custom-product-item img {
     display: block;
+
     width: 100%;
+
     aspect-ratio: 1 / 1;
+
     object-fit: cover;
+
     transition: transform 0.4s ease;
 }
 
@@ -2158,47 +2294,66 @@ footer {
 
 .custom-product-bottom {
     padding: 60px 40px;
+
     background: #f7f8fa;
+
     text-align: center;
 }
 
 .custom-product-bottom h2 {
     margin: 0 0 40px;
+
     color: #222;
+
     font-size: 28px;
 }
 
 .custom-product-features {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+
+    grid-template-columns:
+        repeat(6, 1fr);
+
     gap: 15px;
+
     margin-bottom: 35px;
 }
 
 .custom-product-features div {
     padding: 25px 10px;
+
     background: #fff;
+
     border: 1px solid #e5e5e5;
 }
 
 .custom-product-features strong {
     display: block;
+
     margin-bottom: 10px;
+
     color: #123b68;
+
     font-size: 13px;
 }
 
 .custom-product-features span {
     display: block;
+
     color: #333;
+
     font-size: 14px;
+
     font-weight: 600;
 }
 
 .custom-product-bottom p {
     margin: 0 auto 30px;
+
     color: #666;
+
     font-size: 15px;
+
     line-height: 1.8;
 }
 
@@ -2207,12 +2362,19 @@ footer {
 
 .custom-product-contact {
     display: inline-block;
+
     padding: 15px 35px;
+
     background: #123b68;
+
     color: #fff;
+
     text-decoration: none;
+
     font-size: 14px;
+
     font-weight: 600;
+
     transition: all 0.3s ease;
 }
 
@@ -2227,32 +2389,51 @@ footer {
 
 .custom-image-modal {
     display: none;
+
     position: fixed;
+
     z-index: 9999;
+
     top: 0;
+
     left: 0;
+
     width: 100%;
+
     height: 100%;
+
     background: rgba(0, 0, 0, 0.85);
+
     align-items: center;
+
     justify-content: center;
+
     padding: 30px;
+
     box-sizing: border-box;
 }
 
 .custom-image-modal img {
     max-width: 90%;
+
     max-height: 90%;
+
     object-fit: contain;
 }
 
 .custom-image-close {
     position: absolute;
+
     top: 25px;
+
     right: 35px;
+
     color: #fff;
+
     font-size: 45px;
+
     font-weight: 300;
+
     cursor: pointer;
 }
 
@@ -2272,18 +2453,20 @@ footer {
     }
 
     .custom-product-gallery {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+            repeat(2, 1fr);
+
         gap: 15px;
     }
 
     .custom-product-features {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns:
+            repeat(3, 1fr);
     }
 
     .custom-product-bottom {
         padding: 45px 20px;
     }
-
 }
 
 
@@ -2294,7 +2477,7 @@ footer {
     }
 
     .custom-product-features {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+            repeat(2, 1fr);
     }
-
 }
