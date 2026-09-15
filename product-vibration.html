@@ -2,23 +2,31 @@
 <html lang="ko">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>방진·흡음 제품 | 레치인터내셔널</title>
+    <title>주문제작 | 레치인터내셔널</title>
 
     <link rel="stylesheet" href="style.css">
 
+
     <style>
 
+
         /* =========================================
-           방진·흡음 제품 페이지
+           주문제작 페이지
         ========================================= */
 
-        .vibration-product {
+        .custom-product-page {
+
             max-width: 1200px;
+
             margin: 0 auto;
+
             padding: 90px 20px 120px;
+
         }
 
 
@@ -26,268 +34,417 @@
            상단 제목
         ========================================= */
 
-        .vibration-header {
+        .custom-header {
+
             text-align: center;
-            margin-bottom: 65px;
+
+            margin-bottom: 70px;
+
         }
 
-        .vibration-header .product-number {
+
+        .custom-header .product-number {
+
             display: block;
+
             margin-bottom: 20px;
 
             color: #123f70;
+
             font-size: 13px;
+
             font-weight: 700;
+
             letter-spacing: 5px;
+
         }
 
-        .vibration-header h1 {
+
+        .custom-header h1 {
+
             margin: 0 0 25px;
 
             color: #111;
+
             font-size: 42px;
+
             font-weight: 700;
+
         }
 
-        .vibration-header p {
+
+        .custom-header p {
+
             margin: 0;
 
             color: #777;
+
             font-size: 15px;
+
             line-height: 1.9;
+
         }
 
 
         /* =========================================
-           제품 카드
+           주문제작 소개
         ========================================= */
 
-        .vibration-cards {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
+        .custom-intro {
 
-            margin-bottom: 70px;
+            max-width: 850px;
+
+            margin: 0 auto 70px;
+
+            text-align: center;
+
         }
 
-        .vibration-card {
+
+        .custom-intro h2 {
+
+            margin: 0 0 20px;
+
+            color: #222;
+
+            font-size: 28px;
+
+            font-weight: 700;
+
+        }
+
+
+        .custom-intro p {
+
+            margin: 0;
+
+            color: #666;
+
+            font-size: 15px;
+
+            line-height: 1.9;
+
+        }
+
+
+        /* =========================================
+           주문제작 이미지 갤러리
+        ========================================= */
+
+        .custom-gallery {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 24px;
+
+            margin-bottom: 80px;
+
+        }
+
+
+        .custom-gallery-item {
+
             overflow: hidden;
 
-            background: #f6f8fa;
-            border: 1px solid #e1e6eb;
-            border-radius: 8px;
+            background: #fff;
+
+            border: 1px solid #e2e6ea;
 
             cursor: pointer;
 
             transition:
                 transform 0.3s ease,
-                box-shadow 0.3s ease,
-                border-color 0.3s ease;
+                box-shadow 0.3s ease;
+
         }
 
-        .vibration-card:hover {
+
+        .custom-gallery-item:hover {
+
             transform: translateY(-5px);
 
-            border-color: #123f70;
+            box-shadow:
+                0 12px 30px rgba(0, 0, 0, 0.10);
 
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
         }
 
 
-        /* =========================================
-           카드 대표 이미지
-        ========================================= */
-
-        .vibration-card-image {
-            width: 100%;
-            height: 220px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            padding: 20px;
-            box-sizing: border-box;
-
-            background: #fff;
-        }
-
-        .vibration-card-image img {
-            width: 100%;
-            height: 100%;
-
-            object-fit: contain;
+        .custom-gallery-item img {
 
             display: block;
-        }
 
-
-        /* =========================================
-           카드 내용
-        ========================================= */
-
-        .vibration-card-content {
-            padding: 27px 28px 30px;
-
-            background: #f6f8fa;
-        }
-
-        .vibration-card-content h2 {
-            margin: 0 0 13px;
-
-            color: #123f70;
-            font-size: 21px;
-            font-weight: 700;
-        }
-
-        .vibration-card-content p {
-            min-height: 50px;
-
-            margin: 0 0 23px;
-
-            color: #666;
-            font-size: 14px;
-            line-height: 1.8;
-        }
-
-        .vibration-card-more {
-            color: #123f70;
-            font-size: 14px;
-            font-weight: 700;
-        }
-
-
-        /* =========================================
-           상세 제품 영역
-        ========================================= */
-
-        .vibration-detail {
-            display: none;
-
-            margin-top: 20px;
-            padding-top: 60px;
-
-            border-top: 1px solid #ddd;
-
-            text-align: center;
-
-            animation: vibrationFade 0.4s ease;
-        }
-
-        @keyframes vibrationFade {
-
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-
-        }
-
-
-        .vibration-detail-number {
-            display: block;
-
-            margin-bottom: 16px;
-
-            color: #123f70;
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 4px;
-        }
-
-        .vibration-detail h2 {
-            margin: 0 0 40px;
-
-            color: #111;
-            font-size: 30px;
-            font-weight: 700;
-        }
-
-
-        /* =========================================
-           클릭 후 크게 보이는 상세 도면
-        ========================================= */
-
-        .vibration-detail-image {
             width: 100%;
-            max-width: 1200px;
 
-            margin: 0 auto 45px;
+            height: 330px;
 
-            background: #fff;
+            object-fit: cover;
+
+            transition:
+                transform 0.5s ease;
+
         }
 
-        .vibration-detail-image img {
-            width: 100%;
-            height: auto;
 
-            display: block;
-            margin: 0 auto;
+        .custom-gallery-item:hover img {
+
+            transform: scale(1.04);
+
         }
 
 
         /* =========================================
-           뒤로가기 버튼
+           이미지 번호
         ========================================= */
 
-        .vibration-back {
-            display: inline-block;
+        .custom-gallery-caption {
 
-            padding: 14px 30px;
+            padding: 15px 18px;
 
-            border: none;
-            border-radius: 4px;
+            background: #f7f8fa;
 
-            background: #123f70;
-            color: #fff;
+            color: #555;
 
-            font-size: 14px;
+            font-size: 13px;
+
             font-weight: 600;
 
-            cursor: pointer;
-
-            transition: background 0.3s ease;
-        }
-
-        .vibration-back:hover {
-            background: #0b2e54;
         }
 
 
         /* =========================================
-           견적 문의
+           주문제작 대응 영역
         ========================================= */
 
-        .vibration-inquiry {
+        .custom-feature {
+
+            padding: 60px 50px;
+
+            background: #f6f8fa;
+
             text-align: center;
-            margin-top: 65px;
+
         }
 
-        .vibration-inquiry a {
+
+        .custom-feature h2 {
+
+            margin: 0 0 35px;
+
+            color: #222;
+
+            font-size: 28px;
+
+            font-weight: 700;
+
+        }
+
+
+        .custom-feature-list {
+
+            display: grid;
+
+            grid-template-columns: repeat(6, 1fr);
+
+            gap: 12px;
+
+            margin-bottom: 35px;
+
+        }
+
+
+        .custom-feature-item {
+
+            padding: 25px 10px;
+
+            background: #fff;
+
+            border: 1px solid #e1e6eb;
+
+        }
+
+
+        .custom-feature-item strong {
+
+            display: block;
+
+            margin-bottom: 10px;
+
+            color: #123f70;
+
+            font-size: 12px;
+
+            letter-spacing: 1px;
+
+        }
+
+
+        .custom-feature-item span {
+
+            color: #333;
+
+            font-size: 14px;
+
+            font-weight: 600;
+
+        }
+
+
+        .custom-feature p {
+
+            margin: 0 auto 30px;
+
+            color: #666;
+
+            font-size: 14px;
+
+            line-height: 1.9;
+
+        }
+
+
+        /* =========================================
+           견적 문의 버튼
+        ========================================= */
+
+        .custom-inquiry {
+
+            text-align: center;
+
+            margin-top: 65px;
+
+        }
+
+
+        .custom-inquiry a {
+
             display: inline-block;
 
             padding: 16px 32px;
 
             background: #123f70;
+
             color: #fff;
 
             border-radius: 4px;
 
             font-size: 14px;
+
             font-weight: 600;
 
             text-decoration: none;
 
-            transition: background 0.3s ease;
+            transition:
+                background 0.3s ease;
+
         }
 
-        .vibration-inquiry a:hover {
+
+        .custom-inquiry a:hover {
+
             background: #0b2e54;
+
+        }
+
+
+        /* =========================================
+           홈페이지 돌아가기
+        ========================================= */
+
+        .custom-home {
+
+            margin-top: 25px;
+
+            text-align: center;
+
+        }
+
+
+        .custom-home a {
+
+            color: #666;
+
+            font-size: 13px;
+
+            text-decoration: none;
+
+        }
+
+
+        .custom-home a:hover {
+
+            color: #123f70;
+
+        }
+
+
+        /* =========================================
+           이미지 확대 모달
+        ========================================= */
+
+        .custom-modal {
+
+            display: none;
+
+            position: fixed;
+
+            z-index: 9999;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            height: 100%;
+
+            padding: 30px;
+
+            box-sizing: border-box;
+
+            background: rgba(0, 0, 0, 0.88);
+
+            align-items: center;
+
+            justify-content: center;
+
+        }
+
+
+        .custom-modal img {
+
+            max-width: 92%;
+
+            max-height: 90%;
+
+            width: auto;
+
+            height: auto;
+
+            object-fit: contain;
+
+        }
+
+
+        .custom-modal-close {
+
+            position: absolute;
+
+            top: 20px;
+
+            right: 35px;
+
+            color: #fff;
+
+            font-size: 45px;
+
+            font-weight: 300;
+
+            line-height: 1;
+
+            cursor: pointer;
+
         }
 
 
@@ -297,38 +454,114 @@
 
         @media (max-width: 800px) {
 
-            .vibration-product {
+
+            .custom-product-page {
+
                 padding: 70px 20px 90px;
+
             }
 
-            .vibration-header {
-                margin-bottom: 45px;
+
+            .custom-header {
+
+                margin-bottom: 50px;
+
             }
 
-            .vibration-header h1 {
+
+            .custom-header h1 {
+
                 font-size: 32px;
+
             }
 
-            .vibration-header p {
+
+            .custom-header p {
+
                 font-size: 14px;
+
             }
 
-            .vibration-cards {
+
+            .custom-gallery {
+
                 grid-template-columns: 1fr;
-                gap: 20px;
+
+                gap: 18px;
+
             }
 
-            .vibration-card-image {
-                height: 230px;
+
+            .custom-gallery-item img {
+
+                height: auto;
+
+                max-height: 450px;
+
+                object-fit: contain;
+
             }
 
-            .vibration-detail h2 {
-                font-size: 26px;
+
+            .custom-feature {
+
+                padding: 45px 20px;
+
             }
+
+
+            .custom-feature-list {
+
+                grid-template-columns: repeat(3, 1fr);
+
+            }
+
 
         }
 
+
+        @media (max-width: 480px) {
+
+
+            .custom-feature-list {
+
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+
+
+            .custom-modal {
+
+                padding: 15px;
+
+            }
+
+
+            .custom-modal img {
+
+                max-width: 96%;
+
+                max-height: 85%;
+
+            }
+
+
+            .custom-modal-close {
+
+                top: 15px;
+
+                right: 20px;
+
+                font-size: 38px;
+
+            }
+
+
+        }
+
+
     </style>
+
 </head>
 
 
@@ -340,6 +573,7 @@
 ========================================= -->
 
 <header class="header">
+
 
     <div class="logo">
 
@@ -357,261 +591,392 @@
 
     <nav class="menu">
 
+
         <a href="index.html#about">
             회사소개
         </a>
+
 
         <a href="index.html#products">
             제품소개
         </a>
 
+
         <a href="index.html#custom">
             주문제작
         </a>
+
 
         <a href="index.html#factory">
             중국 생산공장
         </a>
 
+
         <a href="index.html#contact">
             문의하기
         </a>
 
+
     </nav>
+
 
 </header>
 
 
 
 <!-- =========================================
-     방진·흡음 제품
+     주문제작 페이지
 ========================================= -->
 
-<section class="vibration-product">
+<section class="custom-product-page">
 
 
     <!-- =====================================
          페이지 제목
     ====================================== -->
 
-    <div class="vibration-header">
+    <div class="custom-header">
+
 
         <span class="product-number">
             PRODUCT 02
         </span>
 
+
         <h1>
-            맞춤 제작 부품
+            주문제작
         </h1>
 
+
         <p>
-            산업 설비의 진동과 소음을 효과적으로 저감할 수 있는<br>
-            다양한 방진 및 흡음 제품을 제공합니다.
+            고객의 요구사항에 맞춘
+            산업용 금속부품 맞춤제작
         </p>
 
-    </div>
-
-
-
-    <!-- =====================================
-         제품 카드
-    ====================================== -->
-
-    <div
-        class="vibration-cards"
-        id="vibrationCards"
-    >
-
-
-        <!-- =================================
-             01. 방진 마운트
-        ================================== -->
-
-        <div
-            class="vibration-card"
-            onclick="showVibrationProduct('mount')"
-        >
-
-            <!--
-                카드에 보이는 대표 이미지
-                ↓
-                vibration-mount-main.png
-            -->
-
-            <div class="vibration-card-image">
-
-                <img
-                    src="images/vibration-mount-main.png"
-                    alt="방진 마운트"
-                >
-
-            </div>
-
-
-            <div class="vibration-card-content">
-
-                <h2>
-                    방진 마운트
-                </h2>
-
-                <p>
-                    설비의 진동과 소음을 효과적으로
-                    저감하는 방진 제품입니다.
-                </p>
-
-                <span class="vibration-card-more">
-                    자세히 보기&nbsp; +
-                </span>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================
-             02. 방진 패드
-        ================================== -->
-
-        <div
-            class="vibration-card"
-            onclick="showVibrationProduct('pad')"
-        >
-
-            <!--
-                카드에 보이는 대표 이미지
-                ↓
-                vibration-pad-main.png
-            -->
-
-            <div class="vibration-card-image">
-
-                <img
-                    src="images/vibration-pad-main.png"
-                    alt="방진 패드"
-                >
-
-            </div>
-
-
-            <div class="vibration-card-content">
-
-                <h2>
-                    방진 패드
-                </h2>
-
-                <p>
-                    진동과 충격을 흡수하여
-                    설비의 안정성을 높이는 제품입니다.
-                </p>
-
-                <span class="vibration-card-more">
-                    자세히 보기&nbsp; +
-                </span>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================
-             03. 흡음재
-        ================================== -->
-
-        <div
-            class="vibration-card"
-            onclick="showVibrationProduct('acoustic')"
-        >
-
-            <!--
-                카드에 보이는 대표 이미지
-                ↓
-                acoustic-main.png
-            -->
-
-            <div class="vibration-card-image">
-
-                <img
-                    src="images/acoustic-main.png"
-                    alt="흡음재"
-                >
-
-            </div>
-
-
-            <div class="vibration-card-content">
-
-                <h2>
-                    흡음재
-                </h2>
-
-                <p>
-                    실내 및 산업 공간의 소음을 저감하고
-                    음향 환경을 개선하는 제품입니다.
-                </p>
-
-                <span class="vibration-card-more">
-                    자세히 보기&nbsp; +
-                </span>
-
-            </div>
-
-        </div>
-
 
     </div>
 
 
 
     <!-- =====================================
-         상세 내용
+         주문제작 소개
     ====================================== -->
 
-    <div
-        class="vibration-detail"
-        id="vibrationDetail"
-    >
+    <div class="custom-intro">
 
 
-        <span
-            class="vibration-detail-number"
-            id="detailNumber"
-        >
-            PRODUCT 02
-        </span>
-
-
-        <h2 id="detailTitle">
-            제품명
+        <h2>
+            다양한 산업용 금속부품 주문제작
         </h2>
 
 
-        <!--
-            클릭하면 여기에
-            상세 도면이 크게 표시됩니다.
-        -->
+        <p>
+            도면 또는 샘플을 기준으로 제품을 검토하고
+            재질, 규격, 형상, 가공 방식 및 표면처리 등
+            고객의 요구사항에 맞춘 맞춤제작이 가능합니다.
+        </p>
 
-        <div class="vibration-detail-image">
+
+    </div>
+
+
+
+    <!-- =====================================
+         주문제작 제품 이미지
+    ====================================== -->
+
+    <div class="custom-gallery">
+
+
+        <!-- =================================
+             01
+        ================================== -->
+
+        <div
+            class="custom-gallery-item"
+            onclick="openCustomImage(this)"
+        >
 
             <img
-                id="detailImage"
-                src=""
-                alt=""
+                src="images/custom01.jpg"
+                alt="주문제작 산업용 금속부품 01"
             >
+
+            <div class="custom-gallery-caption">
+                CUSTOM MADE 01
+            </div>
 
         </div>
 
 
-        <!-- 뒤로가기 -->
 
-        <button
-            type="button"
-            class="vibration-back"
-            onclick="closeVibrationProduct()"
+        <!-- =================================
+             02
+        ================================== -->
+
+        <div
+            class="custom-gallery-item"
+            onclick="openCustomImage(this)"
         >
-            ← 제품 목록으로 돌아가기
-        </button>
+
+            <img
+                src="images/custom02.jpg"
+                alt="주문제작 산업용 금속부품 02"
+            >
+
+            <div class="custom-gallery-caption">
+                CUSTOM MADE 02
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================
+             03
+        ================================== -->
+
+        <div
+            class="custom-gallery-item"
+            onclick="openCustomImage(this)"
+        >
+
+            <img
+                src="images/custom03.jpg"
+                alt="주문제작 산업용 금속부품 03"
+            >
+
+            <div class="custom-gallery-caption">
+                CUSTOM MADE 03
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================
+             04
+        ================================== -->
+
+        <div
+            class="custom-gallery-item"
+            onclick="openCustomImage(this)"
+        >
+
+            <img
+                src="images/custom04.jpg"
+                alt="주문제작 산업용 금속부품 04"
+            >
+
+            <div class="custom-gallery-caption">
+                CUSTOM MADE 04
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================
+             05
+        ================================== -->
+
+        <div
+            class="custom-gallery-item"
+            onclick="openCustomImage(this)"
+        >
+
+            <img
+                src="images/custom05.jpg"
+                alt="주문제작 산업용 금속부품 05"
+            >
+
+            <div class="custom-gallery-caption">
+                CUSTOM MADE 05
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================
+             06
+        ================================== -->
+
+        <div
+            class="custom-gallery-item"
+            onclick="openCustomImage(this)"
+        >
+
+            <img
+                src="images/custom06.jpg"
+                alt="주문제작 산업용 금속부품 06"
+            >
+
+            <div class="custom-gallery-caption">
+                CUSTOM MADE 06
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================
+             07
+        ================================== -->
+
+        <div
+            class="custom-gallery-item"
+            onclick="openCustomImage(this)"
+        >
+
+            <img
+                src="images/custom07.jpg"
+                alt="주문제작 산업용 금속부품 07"
+            >
+
+            <div class="custom-gallery-caption">
+                CUSTOM MADE 07
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================
+             08
+        ================================== -->
+
+        <div
+            class="custom-gallery-item"
+            onclick="openCustomImage(this)"
+        >
+
+            <img
+                src="images/custom08.jpg"
+                alt="주문제작 산업용 금속부품 08"
+            >
+
+            <div class="custom-gallery-caption">
+                CUSTOM MADE 08
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================
+             09
+        ================================== -->
+
+        <div
+            class="custom-gallery-item"
+            onclick="openCustomImage(this)"
+        >
+
+            <img
+                src="images/custom09.jpg"
+                alt="주문제작 산업용 금속부품 09"
+            >
+
+            <div class="custom-gallery-caption">
+                CUSTOM MADE 09
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================
+         주문제작 대응
+    ====================================== -->
+
+    <div class="custom-feature">
+
+
+        <h2>
+            고객 요구사항에 맞춘 맞춤제작
+        </h2>
+
+
+        <div class="custom-feature-list">
+
+
+            <div class="custom-feature-item">
+
+                <strong>01</strong>
+
+                <span>
+                    재질
+                </span>
+
+            </div>
+
+
+            <div class="custom-feature-item">
+
+                <strong>02</strong>
+
+                <span>
+                    규격
+                </span>
+
+            </div>
+
+
+            <div class="custom-feature-item">
+
+                <strong>03</strong>
+
+                <span>
+                    형상
+                </span>
+
+            </div>
+
+
+            <div class="custom-feature-item">
+
+                <strong>04</strong>
+
+                <span>
+                    가공
+                </span>
+
+            </div>
+
+
+            <div class="custom-feature-item">
+
+                <strong>05</strong>
+
+                <span>
+                    표면처리
+                </span>
+
+            </div>
+
+
+            <div class="custom-feature-item">
+
+                <strong>06</strong>
+
+                <span>
+                    체결방식
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+        <p>
+            도면이나 샘플을 보내주시면 제품 사양을 검토하여
+            제작 가능 여부 및 견적을 안내해드립니다.
+        </p>
 
 
     </div>
@@ -622,24 +987,64 @@
          견적 문의
     ====================================== -->
 
-    <div class="vibration-inquiry">
+    <div class="custom-inquiry">
+
 
         <a href="contact.html">
             제품 견적 문의하기
         </a>
 
+
     </div>
-<!-- 홈페이지로 돌아가기 -->
 
-<div class="custom-home">
 
-    <a href="index.html">
-        ← 홈페이지로 돌아가기
-    </a>
 
-</div>
+    <!-- =====================================
+         홈페이지로 돌아가기
+    ====================================== -->
+
+    <div class="custom-home">
+
+
+        <a href="index.html">
+            ← 홈페이지로 돌아가기
+        </a>
+
+
+    </div>
+
 
 </section>
+
+
+
+<!-- =========================================
+     이미지 확대
+========================================= -->
+
+<div
+    class="custom-modal"
+    id="customModal"
+    onclick="closeCustomImage()"
+>
+
+
+    <span
+        class="custom-modal-close"
+        onclick="closeCustomImage()"
+    >
+        ×
+    </span>
+
+
+    <img
+        id="customModalImage"
+        src=""
+        alt="주문제작 제품 확대 이미지"
+    >
+
+
+</div>
 
 
 
@@ -650,180 +1055,57 @@
 <script>
 
 
-/* =========================================
-   제품 클릭
-========================================= */
+function openCustomImage(item) {
 
-function showVibrationProduct(product) {
-
-    const cards =
-        document.getElementById("vibrationCards");
-
-    const detail =
-        document.getElementById("vibrationDetail");
-
-    const title =
-        document.getElementById("detailTitle");
 
     const image =
-        document.getElementById("detailImage");
-
-    const number =
-        document.getElementById("detailNumber");
+        item.querySelector("img");
 
 
-    /* =====================================
-       방진 마운트
-    ====================================== */
-
-    if (product === "mount") {
-
-        number.innerText =
-            "PRODUCT 02 - 01";
-
-        title.innerText =
-            "방진 마운트";
-
-        /*
-            카드 이미지와 다른
-            상세 도면 이미지
-        */
-
-        image.src =
-            "images/vibration-spec.png";
-
-        image.alt =
-            "방진 마운트 주문제작 도면 예시";
-
-    }
+    const modal =
+        document.getElementById("customModal");
 
 
-    /* =====================================
-       방진 패드
-    ====================================== */
-
-    else if (product === "pad") {
-
-        number.innerText =
-            "PRODUCT 02 - 02";
-
-        title.innerText =
-            "방진 패드";
-
-        /*
-            카드 이미지와 다른
-            상세 도면 이미지
-        */
-
-        image.src =
-            "images/vibration-pad.png";
-
-        image.alt =
-            "방진 패드 주문제작 도면 예시";
-
-    }
+    const modalImage =
+        document.getElementById("customModalImage");
 
 
-    /* =====================================
-       흡음재
-    ====================================== */
-
-    else if (product === "acoustic") {
-
-        number.innerText =
-            "PRODUCT 02 - 03";
-
-        title.innerText =
-            "흡음재";
-
-        /*
-            ⭐⭐⭐ 중요 ⭐⭐⭐
-
-            클릭했을 때 보여줄
-            아까 만든 "주문제작 도면 예시"
-        */
-
-        image.src =
-            "images/acoustic-spec.png";
-
-        image.alt =
-            "흡음재 주문제작 도면 예시";
-
-    }
+    modalImage.src =
+        image.src;
 
 
-    /* =====================================
-       카드 숨기기
-    ====================================== */
-
-    cards.style.display = "none";
+    modalImage.alt =
+        image.alt;
 
 
-    /* =====================================
-       상세 영역 보이기
-    ====================================== */
+    modal.style.display =
+        "flex";
 
-    detail.style.display = "block";
-
-
-    /* =====================================
-       상세 영역으로 이동
-    ====================================== */
-
-    setTimeout(function() {
-
-        detail.scrollIntoView({
-
-            behavior: "smooth",
-
-            block: "start"
-
-        });
-
-    }, 50);
 
 }
 
 
 
-/* =========================================
-   뒤로가기
-========================================= */
-
-function closeVibrationProduct() {
-
-    const cards =
-        document.getElementById("vibrationCards");
-
-    const detail =
-        document.getElementById("vibrationDetail");
+function closeCustomImage() {
 
 
-    /* 상세 내용 숨기기 */
-
-    detail.style.display = "none";
-
-
-    /* 제품 카드 다시 표시 */
-
-    cards.style.display = "grid";
+    const modal =
+        document.getElementById("customModal");
 
 
-    /* 페이지 위쪽으로 이동 */
+    modal.style.display =
+        "none";
 
-    window.scrollTo({
-
-        top: 0,
-
-        behavior: "smooth"
-
-    });
 
 }
 
 
 </script>
 
+
+</body>
+
+</html>
 
 </body>
 
